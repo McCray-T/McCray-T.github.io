@@ -15,11 +15,9 @@ h1 {
     display: block;
     margin: auto;
 }
-.project {
-    text-align: center;
-  }
-  
+
   .project a {
+    text-align: center;
     display: block;
     margin-bottom: 10px;
     font-size: 20px;
