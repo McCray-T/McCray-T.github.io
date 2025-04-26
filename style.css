@@ -7,3 +7,11 @@ h1 {
     text-align: center;
     color: #6f7bfc;
 }
+.project img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid rgb(126, 14, 201); /* choose a color */
+    display: block;
+    margin: auto;
+}
