@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: red; /* changed background to red */
 }
 
 /* Header styles */
@@ -32,10 +32,6 @@ main {
     background: white;
     padding: 20px;
     border-radius: 8px;
-}
-
-/* Arrange project sections side by side */
-.projects {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -44,7 +40,7 @@ main {
 /* Individual project box */
 .project {
     background: #f9f9f9;
-    flex: 1 1 300px; /* flex-grow: 1; flex-shrink: 1; flex-basis: 300px */
+    flex: 1 1 300px;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
@@ -57,6 +53,8 @@ main {
     max-width: 100%;
     height: auto;
     border-radius: 6px;
+    background-color: black; /* added black background to images */
+    padding: 10px; /* optional: adds a little padding inside the black background */
 }
 
 /* Contact section */
