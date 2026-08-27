@@ -1,0 +1,10 @@
+/* Structure */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+}
+
+#content {
+    width: 80%;
+    margin: auto;
+}
