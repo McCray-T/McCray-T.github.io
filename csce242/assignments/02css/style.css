@@ -1,0 +1,10 @@
+/*
+Author: Tyson McCray
+Stylesheet for the Dream Garage assignment page
+*/
+
+body {
+    background-image: url(images/storm.png);
+    background-size: cover;
+    color: white;
+}
