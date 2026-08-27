@@ -17,3 +17,18 @@ h1, h2 {
 a {
     color: #FF8000;
 }
+
+img {
+    border: 3px solid #FF8000;
+    padding: 5px;
+}
+
+table, th, td {
+    border: 1px solid #FF8000;
+    padding: 8px;
+}
+
+th {
+    background-color: #FF8000;
+    color: #111111;
+}
