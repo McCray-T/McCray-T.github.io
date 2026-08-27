@@ -4,7 +4,16 @@ Stylesheet for the Dream Garage assignment page
 */
 
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(images/storm.png);
     background-size: cover;
     color: white;
+}
+
+h1, h2 {
+    color: #FF8000;
+}
+
+a {
+    color: #FF8000;
 }
