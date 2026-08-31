@@ -1,11 +1,76 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
     <head>
-        <!-- 
-        Author: Tyson McCray
-        -->
-        <title>
-            "Flex Site"
-        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout with Flex</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
+    <body>
+        <div class="page">
+
+            <header id="site-header">
+                <h1>Layout with Flex</h1>
+            </header>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <section id="card-row">
+                <aside id="sidebar">
+                    <h2>Sidebar</h2>
+                    <ul class="quick-links">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </aside>
+
+                <article class="card">
+                    <h2 class="card-title">Title 1</h2>
+                    <img class="card-image" src="https://dummyimage.com/500x400/7ea8be/ffffff" alt="Placeholder image, 500 by 400 pixels">
+                </article>
+
+                <article class="card">
+                    <h2 class="card-title">Title 2</h2>
+                    <img class="card-image" src="https://dummyimage.com/500x400/7ea8be/ffffff" alt="Placeholder image, 500 by 400 pixels">
+                </article>
+
+                <article class="card">
+                    <h2 class="card-title">Title 3</h2>
+                    <img class="card-image" src="https://dummyimage.com/500x400/7ea8be/ffffff" alt="Placeholder image, 500 by 400 pixels">
+                </article>
+            </section>
+
+            <section class="idea-row">
+                <img class="side-image" src="https://dummyimage.com/300x300/7ea8be/ffffff" alt="Placeholder image, 300 by 300 pixels">
+                <article class="idea-content">
+                    <h2>Idea 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </article>
+                <img class="side-image" src="https://dummyimage.com/300x300/7ea8be/ffffff" alt="Placeholder image, 300 by 300 pixels">
+            </section>
+
+            <section class="idea-row">
+                <img class="side-image" src="https://dummyimage.com/300x300/7ea8be/ffffff" alt="Placeholder image, 300 by 300 pixels">
+                <article class="idea-content">
+                    <h2>Idea 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </article>
+                <img class="side-image" src="https://dummyimage.com/300x300/7ea8be/ffffff" alt="Placeholder image, 300 by 300 pixels">
+            </section>
+
+            <footer id="site-footer">
+                <p>mccraytc@email.sc.edu</p>
+            </footer>
+
+        </div>
+    </body>
 </html>
