@@ -1,31 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-            <!--
-            Author: Tyson
-            -->
-            <title>Web Applications CSCE 242 Portfolio Page</title>
-            <link rel = "stylesheet" href = "style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+        Author: Tyson McCray
+        -->
+        <title>Web Applications CSCE 242 Portfolio Page</title>
+        <link rel = "stylesheet" href = "style.css" />
     </head>
     <body>
         <div id = "page">
             <header>
-                <h1>Web Applications CSCE 242 Portfolio Page</h1>
-                <p>CSCE 242 serves as a web application mastery class. Throughout this class we will work on and develop a data-driven website to help with future employement opportunities and skill development. </p>
+                <p id = "author-name">Tyson McCray</p>
+                <h1>CSCE 242: Web Applications</h1>
+                <p id = "intro">CSCE 242 serves as a web application mastery class. Throughout this class we will work on and develop a data-driven website to help with future employment opportunities and skill development.</p>
                 <p id = "repo-link"><a href = "https://github.com/McCray-T/McCray-T.github.io/tree/main/csce242">View my CSCE 242 code on GitHub</a></p>
-                <h2>Assignments</h2>
-
             </header>
             <main>
-                <ol id = "assignments-list">
-                    <li><a href = "assignments/01html/main.html" > Basic HTML </a></li>
-                    <li><a href = "assignments/02css/index.html" > Dream Garage </a></li>
-                    <li><a href = "assignments/03flex/index.html" > Flexbox Layout </a></li>
-                </ol>
+                <section id = "assignments">
+                    <h2>Assignments</h2>
+                    <div class = "card-grid">
+                        <article class = "card">
+                            <h3 class = "card-title">Assignment 1 - Basic HTML</h3>
+                            <img class = "card-image" src = "images/html.png" alt = "Screenshot of the Basic HTML golf page">
+                            <p class = "card-desc">My first page for the course, built with plain HTML5. It's a short article about learning golf, laid out with a heading, two images, a list of key skills, and a table of average club distances.</p>
+                            <a class = "card-link" href = "assignments/01html/main.html">View Assignment</a>
+                        </article>
+                        <article class = "card">
+                            <h3 class = "card-title">Assignment 2 - Basic CSS</h3>
+                            <img class = "card-image" src = "images/garage.png" alt = "Screenshot of the Dream Garage CSS page">
+                            <p class = "card-desc">A "Dream Garage" page comparing a McLaren P1 and a Lexus LC500. This one focuses on CSS: custom fonts, a color theme, image styling, and a formatted spec-comparison table.</p>
+                            <a class = "card-link" href = "assignments/02css/index.html">View Assignment</a>
+                        </article>
+                        <article class = "card">
+                            <h3 class = "card-title">Assignment 3 - Page Layout</h3>
+                            <img class = "card-image" src = "images/flex.png" alt = "Screenshot of the Flexbox page layout assignment">
+                            <p class = "card-desc">A page layout built entirely with Flexbox, including a horizontal nav bar that switches to a vertical stack on small screens, a sidebar/content row, and alternating image-and-text sections.</p>
+                            <a class = "card-link" href = "assignments/03flex/index.html">View Assignment</a>
+                        </article>
+                    </div>
+                </section>
+                <section id = "projects">
+                    <h2>Projects</h2>
+                    <div class = "card-grid">
+                        <article class = "card">
+                            <h3 class = "card-title">Term Project - Canopus Technologies</h3>
+                            <img class = "card-image" src = "images/project.png" alt = "Screenshot of the Canopus Technologies project proposal document">
+                            <p class = "card-desc">My proposed term project: a customer-retention dashboard for membership-based businesses like gyms and wellness studios. It tracks visit frequency and benefit usage to flag customers at risk of cancelling, with pages for a customer directory, customer management, and a data overview.</p>
+                            <a class = "card-link" href = "projects/part1/proposal.pdf">View Proposal (PDF)</a>
+                        </article>
+                    </div>
+                </section>
             </main>
             <footer>
                 <p>&copy; tysonmccray</p>
-
             </footer>
         </div>
     </body>
