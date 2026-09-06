@@ -82,3 +82,76 @@ img {
     font-weight: bold;
     padding: 10px 20px;
 }
+
+/* Mission */
+#mission {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+#mission p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Split Rows */
+.split-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.split-image {
+    width: 100%;
+}
+
+.split-content {
+    padding: 24px;
+}
+
+.split-content h2 {
+    color: #73000a;
+    margin-top: 0;
+}
+
+/* Testimonial */
+#testimonial {
+    background-color: #73000a;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#testimonial blockquote {
+    max-width: 700px;
+    margin: 0 auto 14px;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#testimonial .attribution {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .split-row {
+        flex-direction: row;
+    }
+
+    .split-row.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .split-image {
+        flex: 0 0 40%;
+    }
+
+    .split-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
