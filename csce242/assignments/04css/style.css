@@ -10,3 +10,75 @@ img {
     max-width: 100%;
     display: block;
 }
+
+/* Header */
+#site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background-color: #fff;
+    border-bottom: 4px solid #73000a;
+    padding: 12px 20px;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.school-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Navigation */
+#main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 4px;
+}
+
+#main-nav a {
+    display: block;
+    padding: 10px 16px;
+    background-color: #73000a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+#hero {
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    max-width: 90%;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 20px 28px;
+}
+
+.hero-overlay h1 {
+    margin: 0 0 14px;
+    font-size: 1.6em;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00adef;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+}
