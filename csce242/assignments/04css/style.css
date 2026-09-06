@@ -1,0 +1,12 @@
+/* Structural */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #374151;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
