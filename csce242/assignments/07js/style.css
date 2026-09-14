@@ -76,6 +76,56 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Speech panel + CSS-only speech bubble (no image assets) */
+.panel-speech {
+    cursor: pointer;
+}
+
+.speech-area {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.speech-bubble {
+    display: none;
+    position: relative;
+    background: #ffffff;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    padding: 0.4rem 1.1rem;
+    font-weight: 700;
+    color: var(--accent);
+    width: fit-content;
+}
+
+.speech-bubble.visible {
+    display: inline-block;
+}
+
+/* Tail: two stacked triangles (border color, then background) give the bubble an outline */
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 18px;
+    border-style: solid;
+    border-width: 16px 12px 0 0;
+    border-color: var(--border) transparent transparent transparent;
+}
+
+.speech-bubble::before {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 21px;
+    border-style: solid;
+    border-width: 12px 9px 0 0;
+    border-color: #ffffff transparent transparent transparent;
+    z-index: 1;
+}
+
 /* Desktop: three separate columns instead of one stacked card */
 @media (min-width: 700px) {
     .panels {
