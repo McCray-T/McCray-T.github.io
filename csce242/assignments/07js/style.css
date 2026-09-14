@@ -1,0 +1,96 @@
+:root {
+    --bg: #e9edf5;
+    --panel-bg: #ffffff;
+    --border: #3d5166;
+    --heading: #263449;
+    --accent: #c1543f;
+    --label: #4f6a86;
+    --text: #33404d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Verdana, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin: 0 0 0.35rem;
+    font-size: 2.3rem;
+    color: var(--heading);
+}
+
+header .subtitle {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+/* Mobile-first: panels stack into a single bordered card, split by rules */
+.panels {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--panel-bg);
+}
+
+.panel {
+    padding: 1.75rem 1.5rem;
+    border-bottom: 2px solid var(--border);
+    text-align: center;
+}
+
+.panel:last-child {
+    border-bottom: none;
+}
+
+.panel h2 {
+    margin: 0 0 1rem;
+    font-size: 1.3rem;
+    color: var(--heading);
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--label);
+    font-size: 0.9rem;
+}
+
+/* Desktop: three separate columns instead of one stacked card */
+@media (min-width: 700px) {
+    .panels {
+        flex-direction: row;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        gap: 1.5rem;
+    }
+
+    .panel {
+        flex: 1;
+        border: 2px solid var(--border);
+        border-radius: 6px;
+        background: var(--panel-bg);
+        min-height: 260px;
+    }
+}
