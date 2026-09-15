@@ -13,3 +13,11 @@ const beverageMessage = document.getElementById("beverage-message");
 beverageSelect.onchange = (e) => {
     beverageMessage.innerHTML = `${e.target.value}: Nice Choice!`;
 };
+
+//Adds or removes the emoji sticker when the Add a Sticker panel is clicked
+const stickerPanel = document.getElementById("panel-sticker");
+const sticker = document.getElementById("sticker");
+
+stickerPanel.onclick = () => {
+    sticker.classList.toggle("visible");
+};

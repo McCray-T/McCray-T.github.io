@@ -99,6 +99,38 @@ footer {
     font-weight: 600;
 }
 
+/* Add a Sticker panel */
+.panel-sticker {
+    cursor: pointer;
+}
+
+/* position: relative here is what lets the sticker's position: absolute
+   place it relative to this box instead of the whole page */
+.sticker-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+}
+
+.sun-graphic {
+    font-size: 5.5rem;
+    line-height: 1;
+}
+
+.sticker {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    font-size: 1.8rem;
+    display: none;
+}
+
+.sticker.visible {
+    display: block;
+}
+
 /* Speech panel + CSS-only speech bubble (no image assets) */
 .panel-speech {
     cursor: pointer;
