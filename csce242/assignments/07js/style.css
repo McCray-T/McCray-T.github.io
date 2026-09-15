@@ -181,6 +181,34 @@ footer {
     z-index: 1;
 }
 
+/* Submit button */
+.submit-row {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.submit-btn {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #a8452f;
+}
+
+#submit-message {
+    margin: 0.75rem 0 0;
+    min-height: 1.2em;
+    color: var(--label);
+    font-weight: 600;
+}
+
 /* Desktop: three separate columns instead of one stacked card */
 @media (min-width: 700px) {
     .panels {

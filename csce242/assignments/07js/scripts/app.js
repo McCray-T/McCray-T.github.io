@@ -21,3 +21,11 @@ const sticker = document.getElementById("sticker");
 stickerPanel.onclick = () => {
     sticker.classList.toggle("visible");
 };
+
+//Placeholder submit handler
+const submitBtn = document.getElementById("submit-btn");
+const submitMessage = document.getElementById("submit-message");
+
+submitBtn.onclick = () => {
+    submitMessage.innerHTML = "Submitted!";
+};
