@@ -1,35 +1,27 @@
-/* Cano Tech homepage styles */
+/*
+Author: Tyson McCray
+*/
 
 :root {
-    /* backgrounds */
-    --color-bg: #101f30;
-    --color-bg-deep: #0a1521;
-    --color-bg-panel: #17293e;
-
-    /* accent */
-    --color-accent: #34c8a3;
-    --color-accent-hover: #2aad8c;
-    --color-on-accent: #0b241d;
-
-    /* text */
-    --color-text-primary: #f1f3f2;
-    --color-text-secondary: #93a5b8;
-    --color-text-muted: #5f7286;
-
-    /* structure */
-    --color-border: #223650;
-
-    /* status dots (used on the app-preview panel) */
-    --color-dot-red: #ff5f57;
-    --color-dot-yellow: #febc2e;
-    --color-dot-green: #28c840;
-
-    /* type */
+    --color-bg:#101f30;
+    --color-bg-deep:#0a1521;
+    --color-bg-panel:#17293e;
+    --color-accent:#34c8a3;
+    --color-accent-hover:#2aad8c;
+    --color-on-accent:#0b241d;
+    --color-text-primary:#f1f3f2;
+    --color-text-secondary:#93a5b8;
+    --color-text-muted:#5f7286;
+    --color-border:#223650;
+    --color-dot-red:#ff5f57;
+    --color-dot-yellow:#febc2e;
+    --color-dot-green:#28c840;
     --font-heading: Georgia, "Times New Roman", Times, serif;
     --font-body: "Segoe UI", Tahoma, Arial, sans-serif;
     --font-mono: "Consolas", "Courier New", monospace;
 }
 
+/* Structural */
 * {
     box-sizing: border-box;
 }
@@ -46,10 +38,11 @@ a {
     text-decoration: none;
 }
 
+/* Buttons */
 .btn {
     display: inline-block;
-    padding: 0.7rem 1.3rem;
-    border-radius: 0.4rem;
+    padding: 12px 20px;
+    border-radius: 6px;
     font-family: var(--font-body);
     font-weight: 600;
     font-size: 0.95rem;
@@ -64,20 +57,30 @@ a {
     background-color: var(--color-accent-hover);
 }
 
-/* header */
+.btn-link {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+    color: var(--color-text-secondary);
+}
 
+.btn-link:hover {
+    color: var(--color-text-primary);
+}
+
+/* Header */
 .site-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    padding: 1.25rem 3rem;
+    gap: 32px;
+    padding: 20px 48px;
 }
 
 .brand {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: 10px;
     font-family: var(--font-heading);
     font-size: 1.15rem;
     font-weight: 700;
@@ -87,9 +90,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 0.4rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
     background-color: var(--color-accent);
     color: var(--color-on-accent);
     font-family: var(--font-body);
@@ -97,17 +100,18 @@ a {
     font-weight: 700;
 }
 
+/* Navigation */
 .main-nav ul {
     display: flex;
     align-items: center;
-    gap: 1.75rem;
+    gap: 28px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .main-nav a {
-    padding-bottom: 0.35rem;
+    padding-bottom: 6px;
     color: var(--color-text-secondary);
     font-size: 0.95rem;
     border-bottom: 2px solid transparent;
@@ -124,4 +128,60 @@ a {
 
 .header-cta {
     flex-shrink: 0;
+}
+
+/* Hero */
+.hero {
+    padding: 56px 48px;
+}
+
+.hero-copy {
+    max-width: 550px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 24px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: var(--color-bg-panel);
+    color: var(--color-accent);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+}
+
+.badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+}
+
+.hero-heading {
+    margin: 0 0 20px;
+    font-family: var(--font-heading);
+    font-size: 2.75rem;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.hero-heading em {
+    display: block;
+    color: var(--color-accent);
+    font-style: italic;
+}
+
+.hero-text {
+    margin: 0 0 32px;
+    color: var(--color-text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
