@@ -1,0 +1,127 @@
+/* Cano Tech homepage styles */
+
+:root {
+    /* backgrounds */
+    --color-bg: #101f30;
+    --color-bg-deep: #0a1521;
+    --color-bg-panel: #17293e;
+
+    /* accent */
+    --color-accent: #34c8a3;
+    --color-accent-hover: #2aad8c;
+    --color-on-accent: #0b241d;
+
+    /* text */
+    --color-text-primary: #f1f3f2;
+    --color-text-secondary: #93a5b8;
+    --color-text-muted: #5f7286;
+
+    /* structure */
+    --color-border: #223650;
+
+    /* status dots (used on the app-preview panel) */
+    --color-dot-red: #ff5f57;
+    --color-dot-yellow: #febc2e;
+    --color-dot-green: #28c840;
+
+    /* type */
+    --font-heading: Georgia, "Times New Roman", Times, serif;
+    --font-body: "Segoe UI", Tahoma, Arial, sans-serif;
+    --font-mono: "Consolas", "Courier New", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.4rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.btn-accent {
+    background-color: var(--color-accent);
+    color: var(--color-on-accent);
+}
+
+.btn-accent:hover {
+    background-color: var(--color-accent-hover);
+}
+
+/* header */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.25rem 3rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.brand-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    background-color: var(--color-accent);
+    color: var(--color-on-accent);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav a {
+    padding-bottom: 0.35rem;
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover {
+    color: var(--color-text-primary);
+}
+
+.main-nav a.active {
+    color: var(--color-text-primary);
+    border-bottom-color: var(--color-accent);
+}
+
+.header-cta {
+    flex-shrink: 0;
+}
