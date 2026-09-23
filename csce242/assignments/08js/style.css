@@ -1,0 +1,146 @@
+/*
+Author: Tyson McCray
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&display=swap");
+
+:root {
+    --color-bg:#f1e8f5;
+    --color-card-bg:#ffffff;
+    --color-panel-bg:#faf5fb;
+    --color-border:#6b3f7a;
+    --color-heading:#4a1e5c;
+    --color-accent:#e08e2b;
+    --color-text-secondary:#7a5f87;
+    --color-text-primary:#372b40;
+    --font-heading: "Fraunces", "Segoe UI", serif;
+    --font-body: "Segoe UI", Verdana, sans-serif;
+}
+
+/* Structural */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+}
+
+.card {
+    width: 100%;
+    max-width: 480px;
+    margin: 32px 16px;
+    padding: 28px 24px;
+    background-color: var(--color-card-bg);
+    border-top: 6px solid var(--color-accent);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.card-top {
+    text-align: center;
+}
+
+.card-top h1 {
+    margin: 0 0 6px;
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--color-heading);
+}
+
+.subtitle {
+    margin: 0 0 14px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-accent);
+}
+
+/* Navigation: mobile-first, menu list is stacked and hidden until the toggle feature commit wires it up */
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu-list {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-list li {
+    padding: 6px 0;
+}
+
+.menu-link {
+    display: inline-block;
+    padding: 3px 11px;
+    border-radius: 999px;
+    color: var(--color-heading);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-link:hover {
+    color: var(--color-accent);
+}
+
+.menu-link.active {
+    background-color: var(--color-bg);
+    color: var(--color-accent);
+}
+
+/* Content */
+.content-box {
+    background-color: var(--color-panel-bg);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-accent);
+    border-radius: 6px;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+.exercise-panel.hidden {
+    display: none;
+}
+
+.panel-title {
+    margin: 0 0 12px;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--color-heading);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--color-text-secondary);
+    font-size: 0.85rem;
+}
+
+/* Responsive Design */
+
+/* Wide screens: menu becomes an always-visible horizontal row */
+@media (min-width: 700px) {
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .menu-list li {
+        padding: 0;
+    }
+}
