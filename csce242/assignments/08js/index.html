@@ -28,7 +28,9 @@
             <div class="content-box">
                 <section class="exercise-panel" id="exercise-1">
                     <h2 class="panel-title">Missing Class Point Deductions</h2>
-                    <!-- Deduction calculator markup added in the Exercise 1 feature commit -->
+                    <label for="days-missed">How many days do you intend to miss class?</label>
+                    <input type="number" id="days-missed" min="0" max="25" value="0">
+                    <p id="deduction-message" class="result-main"></p>
                 </section>
                 <section class="exercise-panel hidden" id="exercise-2">
                     <h2 class="panel-title">End of Semester Counter</h2>
