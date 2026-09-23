@@ -47,3 +47,24 @@ daysMissedInput.oninput = () => {
 
     deductionMessage.innerHTML = `You will lose ${percentLost}% for skipping ${days} days. ${note}`;
 };
+
+//End of Semester Counter: last day of class is December 4th
+const today = new Date();
+const lastDay = new Date(today.getFullYear(), 11, 4);
+const daysLeft = Math.ceil((lastDay - today) / (1000 * 60 * 60 * 24));
+let counterNote;
+
+if (daysLeft > 150) {
+    counterNote = "Not time to start counting down yet.";
+} else if (daysLeft > 99) {
+    counterNote = "The semester is in full swing.";
+} else if (daysLeft > 49) {
+    counterNote = "Halfway there! Keep pushing.";
+} else if (daysLeft > 19) {
+    counterNote = "The finish line is in sight!";
+} else {
+    counterNote = "Almost there! Final stretch.";
+}
+
+document.getElementById("days-left").innerHTML = daysLeft;
+document.getElementById("counter-message").innerHTML = counterNote;
