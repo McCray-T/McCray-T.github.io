@@ -15,6 +15,10 @@ Author: Tyson McCray
     --color-text-primary:#2b2f36;
     --font-heading: "Fraunces", "Segoe UI", serif;
     --font-body: "Segoe UI", Verdana, sans-serif;
+    --road-grass:#7cb95a;
+    --road-asphalt:#2e2e33;
+    --road-line:#f4c430;
+    --road-edge:#ffffff;
 }
 
 /* Structural */
@@ -93,12 +97,49 @@ body {
     border-radius: 4px;
 }
 
-/* Road placeholder: full CSS art added in a later commit */
+/* Road drawn with layered gradients */
 .road {
     position: relative;
-    min-height: 280px;
-    border: 1px dashed var(--color-border);
+    height: 300px;
     border-radius: 6px;
+    overflow: hidden;
+    background: linear-gradient(
+        to bottom,
+        var(--road-grass) 0 40px,
+        var(--road-edge) 40px 43px,
+        var(--road-asphalt) 43px 257px,
+        var(--road-edge) 257px 260px,
+        var(--road-grass) 260px 300px
+    );
+}
+
+.road::after {
+    content: "";
+    position: absolute;
+    top: 148px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: repeating-linear-gradient(
+        to right,
+        var(--road-line) 0 28px,
+        transparent 28px 50px
+    );
+}
+
+.lane {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 105px;
+}
+
+#lane-top {
+    top: 43px;
+}
+
+#lane-bottom {
+    top: 152px;
 }
 
 /* Footer */
