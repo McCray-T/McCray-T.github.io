@@ -142,6 +142,43 @@ body {
     top: 152px;
 }
 
+/* Car shape adapted from https://codepen.io/Amodeus/pen/BZELbz */
+.car {
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    border-radius: 16px;
+    background: var(--car-color, #7c6fd1);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.car-window {
+    position: absolute;
+    top: -14px;
+    left: 25%;
+    width: 50%;
+    height: 22px;
+    background: #bfe4fa;
+    border-radius: 12px 12px 4px 4px;
+}
+
+.wheel {
+    position: absolute;
+    bottom: -6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #333333;
+}
+
+.wheel-left {
+    left: 14px;
+}
+
+.wheel-right {
+    right: 14px;
+}
+
 /* Footer */
 footer {
     text-align: center;
