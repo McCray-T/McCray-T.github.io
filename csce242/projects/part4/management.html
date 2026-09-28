@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+        Author: Tyson McCray
+        -->
+        <title>Cano Tech - Customer Management</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page">
+            <header class="site-header">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark">CT</span>
+                    <span class="brand-name">Cano Tech</span>
+                </a>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav-list">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <nav class="main-nav" id="main-nav">
+                    <ul id="main-nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="directory.html">Customer Directory</a></li>
+                        <li><a class="active" href="management.html">Customer Management</a></li>
+                        <li><a href="overview.html">Data Overview</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a class="btn btn-accent header-cta" href="directory.html">View sample record</a>
+            </header>
+            <main>
+                <section class="management">
+                    <p class="eyebrow">Customer Management</p>
+                    <div class="management-head">
+                        <h1>Member Records</h1>
+                        <div class="management-actions">
+                            <button type="button" class="btn btn-accent">+ Add member</button>
+                            <button type="button" class="btn btn-outline">Log visit</button>
+                            <button type="button" class="btn btn-outline">Edit record</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </div>
+                    </div>
+                    <div class="management-layout">
+                        <aside class="member-list">
+                            <p class="member-list-label">All members</p>
+                            <a class="member-item member-item-active" href="management.html">
+                                <span class="member-avatar">PN</span>
+                                <span>Priya Nair<br><small>Premium</small></span>
+                            </a>
+                            <div class="member-item">
+                                <span class="member-avatar">MO</span>
+                                <span>Mara Osei<br><small>Premium</small></span>
+                            </div>
+                            <div class="member-item">
+                                <span class="member-avatar">RC</span>
+                                <span>Renee Castillo<br><small>Premium</small></span>
+                            </div>
+                            <div class="member-item">
+                                <span class="member-avatar">LH</span>
+                                <span>Leila Haddad<br><small>Elite</small></span>
+                            </div>
+                            <div class="member-item">
+                                <span class="member-avatar">JT</span>
+                                <span>Jamie Torres<br><small>Elite</small></span>
+                            </div>
+                            <div class="member-item">
+                                <span class="member-avatar">DR</span>
+                                <span>Daniel Reyes<br><small>Standard</small></span>
+                            </div>
+                            <div class="member-item">
+                                <span class="member-avatar">JO</span>
+                                <span>James Okafor<br><small>Standard</small></span>
+                            </div>
+                            <div class="member-item">
+                                <span class="member-avatar">SL</span>
+                                <span>Sofia Lee<br><small>Standard</small></span>
+                            </div>
+                        </aside>
+                        <div class="member-detail">
+                            <div class="member-detail-head">
+                                <span class="member-avatar member-avatar-lg">PN</span>
+                                <div>
+                                    <h2>Priya Nair</h2>
+                                    <p class="member-detail-sub">MBR-004821 &middot; priya.nair@example.com &middot; (415) 552-0148 &middot; Since March 2025</p>
+                                </div>
+                                <span class="status status-active">Active</span>
+                                <span class="pill pill-plan">Premium</span>
+                            </div>
+                            <div class="detail-tabs">
+                                <span class="detail-tab detail-tab-active">Overview</span>
+                                <span class="detail-tab">Visit log</span>
+                                <span class="detail-tab">Staff notes</span>
+                            </div>
+                            <div class="detail-panels">
+                                <div class="detail-panel">
+                                    <p class="detail-panel-label">Account details</p>
+                                    <p class="detail-row"><span>Full name</span><span>Priya Nair</span></p>
+                                    <p class="detail-row"><span>Email</span><span>priya.nair@example.com</span></p>
+                                    <p class="detail-row"><span>Phone</span><span>(415) 552-0148</span></p>
+                                </div>
+                                <div class="detail-panel">
+                                    <p class="detail-panel-label">Visit summary</p>
+                                    <p class="detail-row"><span>Visits / week</span><span>5</span></p>
+                                    <p class="detail-row"><span>Logged visits</span><span>62</span></p>
+                                </div>
+                                <div class="detail-panel">
+                                    <p class="detail-panel-label">Actions</p>
+                                    <button type="button" class="btn btn-accent detail-action">Edit record</button>
+                                    <button type="button" class="btn btn-outline detail-action">Log visit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="site-footer">
+                <div class="footer-top">
+                    <a class="brand" href="index.html">
+                        <span class="brand-mark">CT</span>
+                        <span class="brand-name">Cano Tech</span>
+                        <span class="footer-tagline">&middot; Member record management for wellness businesses</span>
+                    </a>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="directory.html">Customer Directory</a></li>
+                            <li><a href="management.html">Customer Management</a></li>
+                            <li><a href="overview.html">Data Overview</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="footer-copy">&copy; 2026 Canopus Technologies</p>
+            </footer>
+        </div>
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
