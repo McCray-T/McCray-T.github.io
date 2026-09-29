@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+        Author: Tyson McCray
+        -->
+        <title>Assignment 10 - Arrays</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="card">
+            <div class="card-top">
+                <h1>Assignment 10</h1>
+                <p class="subtitle">Arrays</p>
+            </div>
+            <div class="content-box">
+                <label for="destination-type">Pick Your Destination Type</label>
+                <select id="destination-type">
+                    <option value="">Select</option>
+                    <option value="Mountains">Mountains</option>
+                    <option value="Beaches">Beaches</option>
+                </select>
+                <ul class="destination-list" id="destination-list"></ul>
+                <div class="map-wrap hidden" id="map-wrap">
+                    <iframe id="map-frame" src="" title="Selected destination map" loading="lazy"></iframe>
+                </div>
+            </div>
+            <footer>
+                <p>@McCray-T</p>
+            </footer>
+        </div>
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
