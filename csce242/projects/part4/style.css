@@ -977,6 +977,62 @@ button.btn {
     text-align: right;
 }
 
+/* About */
+.about {
+    display: flex;
+    gap: 40px;
+    padding: 56px 48px;
+}
+
+.about-copy {
+    flex: 1 1 400px;
+    max-width: 480px;
+}
+
+.about-copy h1 {
+    margin: 0 0 20px;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+}
+
+.about-copy p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.about-grid {
+    flex: 1 1 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    align-content: start;
+}
+
+.about-card {
+    padding: 20px;
+    background-color: var(--color-bg-panel);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+}
+
+.about-icon {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--color-accent);
+    font-size: 1.2rem;
+}
+
+.about-card-title {
+    margin: 0 0 6px;
+    font-weight: 700;
+}
+
+.about-card-text {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+}
+
 /* Footer */
 .site-footer {
     padding: 24px 48px;
@@ -1041,6 +1097,14 @@ button.btn {
         width: 100%;
     }
 
+    .about {
+        flex-direction: column;
+    }
+
+    .about-copy {
+        max-width: 100%;
+    }
+
     .management-layout {
         grid-template-columns: 1fr;
     }
@@ -1093,6 +1157,14 @@ button.btn {
 
     .hero {
         padding: 40px 24px;
+    }
+
+    .about {
+        padding: 40px 24px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
     }
 
     .hero-heading {
