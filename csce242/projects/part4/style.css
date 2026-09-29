@@ -1033,6 +1033,65 @@ button.btn {
     font-size: 0.9rem;
 }
 
+/* Contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 56px 48px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 480px;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--color-text-secondary);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.required {
+    color: var(--color-dot-red);
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: var(--color-bg-panel);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+}
+
+.form-field textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.form-submit {
+    display: block;
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
 /* Footer */
 .site-footer {
     padding: 24px 48px;
@@ -1165,6 +1224,10 @@ button.btn {
 
     .about-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact {
+        padding: 40px 24px;
     }
 
     .hero-heading {
