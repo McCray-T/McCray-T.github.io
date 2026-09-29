@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+        Author: Tyson McCray
+        -->
+        <title>Cano Tech - Data Overview</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page">
+            <header class="site-header">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark">CT</span>
+                    <span class="brand-name">Cano Tech</span>
+                </a>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav-list">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <nav class="main-nav" id="main-nav">
+                    <ul id="main-nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="directory.html">Customer Directory</a></li>
+                        <li><a href="management.html">Customer Management</a></li>
+                        <li><a class="active" href="overview.html">Data Overview</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a class="btn btn-accent header-cta" href="directory.html">View sample record</a>
+            </header>
+            <main>
+                <section class="overview">
+                    <p class="eyebrow">Data Overview</p>
+                    <h1>Business At A Glance</h1>
+                    <div class="stat-tiles">
+                        <div class="stat-tile">
+                            <p class="stat-tile-number">8</p>
+                            <p class="stat-tile-label">All records in directory</p>
+                        </div>
+                        <div class="stat-tile">
+                            <p class="stat-tile-number">7</p>
+                            <p class="stat-tile-label">88% of total</p>
+                        </div>
+                        <div class="stat-tile">
+                            <p class="stat-tile-number">1</p>
+                            <p class="stat-tile-label">Not currently active</p>
+                        </div>
+                        <div class="stat-tile">
+                            <p class="stat-tile-number">3.6</p>
+                            <p class="stat-tile-label">Across all members</p>
+                        </div>
+                    </div>
+                    <div class="charts-row">
+                        <div class="chart-card chart-card-wide">
+                            <p class="chart-title">Visits per day &mdash; this week</p>
+                            <p class="chart-sub">Sep 1&ndash;7, 2026 &middot; all manually logged</p>
+                            <div class="bar-chart">
+                                <div class="bar-chart-col">
+                                    <span class="bar" style="height: 38%;"></span>
+                                    <span class="bar-value">38</span>
+                                    <span class="bar-label">Mon</span>
+                                </div>
+                                <div class="bar-chart-col">
+                                    <span class="bar" style="height: 54%;"></span>
+                                    <span class="bar-value">54</span>
+                                    <span class="bar-label">Tue</span>
+                                </div>
+                                <div class="bar-chart-col">
+                                    <span class="bar" style="height: 61%;"></span>
+                                    <span class="bar-value">61</span>
+                                    <span class="bar-label">Wed</span>
+                                </div>
+                                <div class="bar-chart-col">
+                                    <span class="bar" style="height: 49%;"></span>
+                                    <span class="bar-value">49</span>
+                                    <span class="bar-label">Thu</span>
+                                </div>
+                                <div class="bar-chart-col">
+                                    <span class="bar" style="height: 72%;"></span>
+                                    <span class="bar-value">72</span>
+                                    <span class="bar-label">Fri</span>
+                                </div>
+                                <div class="bar-chart-col">
+                                    <span class="bar" style="height: 67%;"></span>
+                                    <span class="bar-value">67</span>
+                                    <span class="bar-label">Sat</span>
+                                </div>
+                                <div class="bar-chart-col">
+                                    <span class="bar bar-today" style="height: 80%;"></span>
+                                    <span class="bar-value">80</span>
+                                    <span class="bar-label">Sun</span>
+                                </div>
+                            </div>
+                            <div class="chart-legend">
+                                <span><span class="legend-dot legend-dot-accent"></span>Today</span>
+                                <span><span class="legend-dot legend-dot-muted"></span>Prior days</span>
+                            </div>
+                        </div>
+                        <div class="chart-card">
+                            <p class="chart-title">Members by plan</p>
+                            <div class="plan-bars">
+                                <div class="plan-bar-row">
+                                    <span class="plan-bar-name">Premium</span>
+                                    <div class="plan-bar"><span class="plan-bar-fill plan-bar-premium" style="width: 100%;"></span></div>
+                                    <span class="plan-bar-count">3 members</span>
+                                </div>
+                                <div class="plan-bar-row">
+                                    <span class="plan-bar-name">Elite</span>
+                                    <div class="plan-bar"><span class="plan-bar-fill plan-bar-elite" style="width: 67%;"></span></div>
+                                    <span class="plan-bar-count">2 members</span>
+                                </div>
+                                <div class="plan-bar-row">
+                                    <span class="plan-bar-name">Standard</span>
+                                    <div class="plan-bar"><span class="plan-bar-fill plan-bar-standard" style="width: 100%;"></span></div>
+                                    <span class="plan-bar-count">3 members</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-card">
+                            <p class="chart-title">Active vs inactive</p>
+                            <div class="donut" style="--pct: 88;">
+                                <div class="donut-hole"></div>
+                                <span class="donut-center">88%</span>
+                            </div>
+                            <div class="chart-legend chart-legend-stacked">
+                                <span><span class="legend-dot legend-dot-accent"></span>Active 7</span>
+                                <span><span class="legend-dot legend-dot-muted"></span>Inactive 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-card chart-card-full">
+                        <p class="chart-title">Benefit utilization across all members</p>
+                        <div class="benefit-bars">
+                            <div class="benefit-row">
+                                <span class="benefit-label">Group Classes</span>
+                                <div class="benefit-bar"><span style="width: 78%;"></span></div>
+                                <span class="benefit-value">78%</span>
+                            </div>
+                            <div class="benefit-row">
+                                <span class="benefit-label">Open Gym</span>
+                                <div class="benefit-bar"><span style="width: 95%;"></span></div>
+                                <span class="benefit-value">95%</span>
+                            </div>
+                            <div class="benefit-row">
+                                <span class="benefit-label">Personal Training</span>
+                                <div class="benefit-bar"><span style="width: 41%;"></span></div>
+                                <span class="benefit-value">41%</span>
+                            </div>
+                            <div class="benefit-row">
+                                <span class="benefit-label">Sauna Access</span>
+                                <div class="benefit-bar"><span style="width: 34%;"></span></div>
+                                <span class="benefit-value">34%</span>
+                            </div>
+                            <div class="benefit-row">
+                                <span class="benefit-label">Towel Service</span>
+                                <div class="benefit-bar"><span style="width: 22%;"></span></div>
+                                <span class="benefit-value">22%</span>
+                            </div>
+                            <div class="benefit-row">
+                                <span class="benefit-label">Guest Passes</span>
+                                <div class="benefit-bar"><span style="width: 11%;"></span></div>
+                                <span class="benefit-value">11%</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="site-footer">
+                <div class="footer-top">
+                    <a class="brand" href="index.html">
+                        <span class="brand-mark">CT</span>
+                        <span class="brand-name">Cano Tech</span>
+                        <span class="footer-tagline">&middot; Member record management for wellness businesses</span>
+                    </a>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="directory.html">Customer Directory</a></li>
+                            <li><a href="management.html">Customer Management</a></li>
+                            <li><a href="overview.html">Data Overview</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="footer-copy">&copy; 2026 Canopus Technologies</p>
+            </footer>
+        </div>
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
