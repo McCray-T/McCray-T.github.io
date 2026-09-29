@@ -15,9 +15,13 @@ const destinations = {
 
 const typeSelect = document.getElementById("destination-type");
 const destinationList = document.getElementById("destination-list");
+const mapWrap = document.getElementById("map-wrap");
+const mapFrame = document.getElementById("map-frame");
 
 typeSelect.onchange = () => {
     destinationList.innerHTML = "";
+    mapWrap.classList.add("hidden");
+    mapFrame.src = "";
 
     const type = typeSelect.value;
     if (!type) return;
@@ -27,6 +31,11 @@ typeSelect.onchange = () => {
         const link = document.createElement("a");
         link.href = "#";
         link.textContent = name;
+        link.onclick = (e) => {
+            e.preventDefault();
+            mapFrame.src = destinations[type][name];
+            mapWrap.classList.remove("hidden");
+        };
         li.appendChild(link);
         destinationList.appendChild(li);
     }
