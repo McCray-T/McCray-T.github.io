@@ -149,6 +149,18 @@ a {
     font-size: 0.9rem;
 }
 
+/* Stacked, centered links under the card image */
+.card-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-links .card-link {
+    align-self: center;
+}
+
 /* Small screens: stack header and cards vertically */
 @media (max-width: 700px) {
     #page {
