@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+        Author: Tyson McCray
+        -->
+        <title>Cano Tech - Customer Directory</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page">
+            <header class="site-header">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark">CT</span>
+                    <span class="brand-name">Cano Tech</span>
+                </a>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav-list">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <nav class="main-nav" id="main-nav">
+                    <ul id="main-nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a class="active" href="directory.html">Customer Directory</a></li>
+                        <li><a href="management.html">Customer Management</a></li>
+                        <li><a href="overview.html">Data Overview</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a class="btn btn-accent header-cta" href="directory.html">View sample record</a>
+            </header>
+            <main>
+                <section class="directory">
+                    <p class="eyebrow">Customer Directory</p>
+                    <div class="directory-head">
+                        <h1>All Members</h1>
+                        <label class="search-box" for="member-search">
+                            <span class="search-icon">&#128269;</span>
+                            <input type="search" id="member-search" placeholder="Search by name or ID&hellip;">
+                        </label>
+                    </div>
+                    <div class="filter-pills">
+                        <span class="pill pill-active">All</span>
+                        <span class="pill">Premium</span>
+                        <span class="pill">Elite</span>
+                        <span class="pill">Standard</span>
+                        <span class="pill">Active</span>
+                        <span class="pill">Inactive</span>
+                    </div>
+                    <div class="member-table">
+                        <div class="member-row member-row-head">
+                            <span>Member</span>
+                            <span>Plan</span>
+                            <span>Visits/wk</span>
+                            <span>Benefits used</span>
+                            <span>Last visit</span>
+                            <span>Status</span>
+                        </div>
+                        <a class="member-row member-row-link" href="management.html">
+                            <span class="member-name"><span class="member-avatar">PN</span><span>Priya Nair<br><small>MBR-004821</small></span></span>
+                            <span>Premium</span>
+                            <span>5x</span>
+                            <span>Classes, PT, Sauna</span>
+                            <span>Sep 7, 2026</span>
+                            <span class="status status-active">Active</span>
+                        </a>
+                        <div class="member-row">
+                            <span class="member-name"><span class="member-avatar">MO</span><span>Mara Osei<br><small>MBR-003210</small></span></span>
+                            <span>Premium</span>
+                            <span>4x</span>
+                            <span>Classes, Towel</span>
+                            <span>Sep 6, 2026</span>
+                            <span class="status status-active">Active</span>
+                        </div>
+                        <div class="member-row">
+                            <span class="member-name"><span class="member-avatar">RC</span><span>Renee Castillo<br><small>MBR-006002</small></span></span>
+                            <span>Premium</span>
+                            <span>5x</span>
+                            <span>Classes, PT</span>
+                            <span>Sep 8, 2026</span>
+                            <span class="status status-active">Active</span>
+                        </div>
+                        <div class="member-row">
+                            <span class="member-name"><span class="member-avatar">LH</span><span>Leila Haddad<br><small>MBR-001774</small></span></span>
+                            <span>Elite</span>
+                            <span>6x</span>
+                            <span>All Access</span>
+                            <span>Sep 7, 2026</span>
+                            <span class="status status-active">Active</span>
+                        </div>
+                        <div class="member-row">
+                            <span class="member-name"><span class="member-avatar">JT</span><span>Jamie Torres<br><small>MBR-005530</small></span></span>
+                            <span>Elite</span>
+                            <span>4x</span>
+                            <span>All Access, Guest Passes</span>
+                            <span>Sep 8, 2026</span>
+                            <span class="status status-active">Active</span>
+                        </div>
+                        <div class="member-row">
+                            <span class="member-name"><span class="member-avatar">DR</span><span>Daniel Reyes<br><small>MBR-002984</small></span></span>
+                            <span>Standard</span>
+                            <span>2x</span>
+                            <span>Open Gym</span>
+                            <span>Sep 5, 2026</span>
+                            <span class="status status-active">Active</span>
+                        </div>
+                        <div class="member-row">
+                            <span class="member-name"><span class="member-avatar">JO</span><span>James Okafor<br><small>MBR-005560</small></span></span>
+                            <span>Standard</span>
+                            <span>3x</span>
+                            <span>Open Gym, Towel</span>
+                            <span>Sep 4, 2026</span>
+                            <span class="status status-active">Active</span>
+                        </div>
+                        <div class="member-row">
+                            <span class="member-name"><span class="member-avatar">SL</span><span>Sofia Lee<br><small>MBR-004199</small></span></span>
+                            <span>Standard</span>
+                            <span>0x</span>
+                            <span>Open Gym</span>
+                            <span>Aug 12, 2026</span>
+                            <span class="status status-inactive">Inactive</span>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="site-footer">
+                <div class="footer-top">
+                    <a class="brand" href="index.html">
+                        <span class="brand-mark">CT</span>
+                        <span class="brand-name">Cano Tech</span>
+                        <span class="footer-tagline">&middot; Member record management for wellness businesses</span>
+                    </a>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="directory.html">Customer Directory</a></li>
+                            <li><a href="management.html">Customer Management</a></li>
+                            <li><a href="overview.html">Data Overview</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="footer-copy">&copy; 2026 Canopus Technologies</p>
+            </footer>
+        </div>
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
