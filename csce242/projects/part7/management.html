@@ -49,48 +49,19 @@
                     <div class="management-layout">
                         <aside class="member-list">
                             <p class="member-list-label">All members</p>
-                            <a class="member-item member-item-active" href="management.html">
-                                <span class="member-avatar">PN</span>
-                                <span>Priya Nair<br><small>Premium</small></span>
-                            </a>
-                            <div class="member-item">
-                                <span class="member-avatar">MO</span>
-                                <span>Mara Osei<br><small>Premium</small></span>
-                            </div>
-                            <div class="member-item">
-                                <span class="member-avatar">RC</span>
-                                <span>Renee Castillo<br><small>Premium</small></span>
-                            </div>
-                            <div class="member-item">
-                                <span class="member-avatar">LH</span>
-                                <span>Leila Haddad<br><small>Elite</small></span>
-                            </div>
-                            <div class="member-item">
-                                <span class="member-avatar">JT</span>
-                                <span>Jamie Torres<br><small>Elite</small></span>
-                            </div>
-                            <div class="member-item">
-                                <span class="member-avatar">DR</span>
-                                <span>Daniel Reyes<br><small>Standard</small></span>
-                            </div>
-                            <div class="member-item">
-                                <span class="member-avatar">JO</span>
-                                <span>James Okafor<br><small>Standard</small></span>
-                            </div>
-                            <div class="member-item">
-                                <span class="member-avatar">SL</span>
-                                <span>Sofia Lee<br><small>Standard</small></span>
+                            <div id="member-list-items">
+                                <p class="member-message">Loading members&hellip;</p>
                             </div>
                         </aside>
-                        <div class="member-detail">
+                        <div class="member-detail" id="member-detail">
                             <div class="member-detail-head">
-                                <span class="member-avatar member-avatar-lg">PN</span>
+                                <img class="member-avatar member-avatar-lg" id="detail-avatar" alt="">
                                 <div>
-                                    <h2>Priya Nair</h2>
-                                    <p class="member-detail-sub">MBR-004821 &middot; priya.nair@example.com &middot; (415) 552-0148 &middot; Since March 2025</p>
+                                    <h2 id="detail-name">Loading&hellip;</h2>
+                                    <p class="member-detail-sub" id="detail-sub"></p>
                                 </div>
-                                <span class="status status-active">Active</span>
-                                <span class="pill pill-plan">Premium</span>
+                                <span class="status" id="detail-status"></span>
+                                <span class="pill pill-plan" id="detail-plan"></span>
                             </div>
                             <div class="detail-tabs">
                                 <span class="detail-tab detail-tab-active">Overview</span>
@@ -100,14 +71,17 @@
                             <div class="detail-panels">
                                 <div class="detail-panel">
                                     <p class="detail-panel-label">Account details</p>
-                                    <p class="detail-row"><span>Full name</span><span>Priya Nair</span></p>
-                                    <p class="detail-row"><span>Email</span><span>priya.nair@example.com</span></p>
-                                    <p class="detail-row"><span>Phone</span><span>(415) 552-0148</span></p>
+                                    <p class="detail-row"><span>Full name</span><span id="detail-full-name"></span></p>
+                                    <p class="detail-row"><span>Email</span><span id="detail-email"></span></p>
+                                    <p class="detail-row"><span>Phone</span><span id="detail-phone"></span></p>
+                                    <p class="detail-row"><span>Member since</span><span id="detail-since"></span></p>
                                 </div>
                                 <div class="detail-panel">
                                     <p class="detail-panel-label">Visit summary</p>
-                                    <p class="detail-row"><span>Visits / week</span><span>5</span></p>
-                                    <p class="detail-row"><span>Logged visits</span><span>62</span></p>
+                                    <p class="detail-row"><span>Visits / week</span><span id="detail-visits"></span></p>
+                                    <p class="detail-row"><span>Logged visits</span><span id="detail-logged"></span></p>
+                                    <p class="detail-row"><span>Last visit</span><span id="detail-last-visit"></span></p>
+                                    <p class="detail-row"><span>Benefits</span><span id="detail-benefits"></span></p>
                                 </div>
                                 <div class="detail-panel">
                                     <p class="detail-panel-label">Actions</p>
@@ -141,5 +115,6 @@
             </footer>
         </div>
         <script src="scripts/app.js"></script>
+        <script src="scripts/management.js"></script>
     </body>
 </html>

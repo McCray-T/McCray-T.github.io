@@ -712,6 +712,10 @@ img.member-avatar {
     font-size: 0.75rem;
 }
 
+a.member-item:hover {
+    background-color: var(--color-bg-deep);
+}
+
 .member-item-active {
     background-color: var(--color-bg-deep);
     color: var(--color-text-primary);
@@ -801,6 +805,10 @@ img.member-avatar {
 
 .detail-row span:first-child {
     color: var(--color-text-secondary);
+}
+
+.detail-row span:last-child {
+    text-align: right;
 }
 
 .detail-action {
@@ -1121,12 +1129,91 @@ img.member-avatar {
 .contact {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
     padding: 56px 48px;
 }
 
 .contact-form {
+    flex: 1 1 420px;
+    max-width: 520px;
+}
+
+.form-submit:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.form-botcheck {
+    display: none;
+}
+
+/* Feedback message under the send button */
+.form-result {
+    margin: 16px 0 0;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.form-result[hidden] {
+    display: none;
+}
+
+.form-result-pending {
+    background-color: var(--color-bg-deep);
+    border-color: var(--color-border);
+    color: var(--color-text-secondary);
+}
+
+.form-result-success {
+    background-color: rgba(13, 117, 96, 0.12);
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+.form-result-error {
+    background-color: rgba(198, 40, 40, 0.08);
+    border-color: var(--color-danger);
+    color: var(--color-danger);
+}
+
+/* Map column beside the form */
+.contact-side {
+    flex: 1 1 360px;
+    max-width: 520px;
+    padding: 24px;
+    background-color: var(--color-bg-panel);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+}
+
+.contact-side h2 {
+    margin: 0 0 12px;
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+}
+
+.contact-address {
+    margin: 0 0 20px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.contact-map iframe {
+    display: block;
     width: 100%;
-    max-width: 480px;
+    aspect-ratio: 4 / 3;
+    border: 0;
+    border-radius: 8px;
+}
+
+.contact-map-link {
+    margin-top: 12px;
+    padding-bottom: 0;
+    color: var(--color-accent);
 }
 
 .contact-form h1 {
@@ -1257,6 +1344,17 @@ img.member-avatar {
     .about {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-form,
+    .contact-side {
+        flex: 0 0 auto;
+        max-width: 100%;
     }
 
     /* In a column, the 400px flex-basis became a 400px height and left a big gap */
