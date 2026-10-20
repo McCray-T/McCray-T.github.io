@@ -614,6 +614,17 @@ button.btn {
     font-weight: 700;
 }
 
+img.member-avatar {
+    object-fit: cover;
+}
+
+.member-message {
+    margin: 0;
+    padding: 24px 20px;
+    color: var(--color-text-secondary);
+    text-align: center;
+}
+
 .status {
     display: inline-block;
     justify-self: start;
