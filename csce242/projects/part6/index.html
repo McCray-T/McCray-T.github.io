@@ -62,6 +62,34 @@
                             </div>
                         </div>
                     </div>
+                    <div class="slideshow" id="slideshow">
+                        <div class="slide-frame" id="slides">
+                            <a class="slide" href="directory.html" data-title="Customer Directory" data-text="Every member, their plan, and their last visit in one list.">
+                                <img src="images/directory.png" alt="Screenshot of the Customer Directory page">
+                            </a>
+                            <a class="slide hidden" href="management.html" data-title="Customer Management" data-text="A full record for each member, with account details and visit history.">
+                                <img src="images/management.png" alt="Screenshot of the Customer Management page">
+                            </a>
+                            <a class="slide hidden" href="overview.html" data-title="Data Overview" data-text="Weekly visits, plan mix, and benefit use at a glance.">
+                                <img src="images/overview.png" alt="Screenshot of the Data Overview page">
+                            </a>
+                            <a class="slide hidden" href="about.html" data-title="About" data-text="Who Cano Tech is built for and the ideas behind it.">
+                                <img src="images/about.png" alt="Screenshot of the About page">
+                            </a>
+                            <a class="slide hidden" href="contact.html" data-title="Contact" data-text="Questions or a demo request? Send us a message.">
+                                <img src="images/contact.png" alt="Screenshot of the Contact page">
+                            </a>
+                        </div>
+                        <div class="slide-footer">
+                            <button type="button" class="slide-arrow" id="slide-prev" aria-label="Previous page">&lsaquo;</button>
+                            <div class="slide-info" aria-live="polite">
+                                <p class="slide-title" id="slide-title"></p>
+                                <p class="slide-text" id="slide-text"></p>
+                            </div>
+                            <button type="button" class="slide-arrow" id="slide-next" aria-label="Next page">&rsaquo;</button>
+                        </div>
+                        <div class="slide-dots" id="slide-dots"></div>
+                    </div>
                 </section>
                 <section class="steps">
                     <p class="eyebrow">How it works</p>
@@ -128,5 +156,6 @@
             </footer>
         </div>
         <script src="scripts/app.js"></script>
+        <script src="scripts/slideshow.js"></script>
     </body>
 </html>
