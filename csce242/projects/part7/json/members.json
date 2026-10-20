@@ -1,0 +1,144 @@
+[
+  {
+    "_id": 1,
+    "name": "Priya Nair",
+    "member_id": "MBR-004821",
+    "plan": "Premium",
+    "visits_per_week": 5,
+    "benefits": [
+      "Classes",
+      "PT",
+      "Sauna"
+    ],
+    "last_visit": "Sep 7, 2026",
+    "status": "Active",
+    "email": "priya.nair@example.com",
+    "phone": "(415) 552-0148",
+    "member_since": "March 2025",
+    "logged_visits": 62,
+    "img_name": "images/members/priya-nair.svg"
+  },
+  {
+    "_id": 2,
+    "name": "Mara Osei",
+    "member_id": "MBR-003210",
+    "plan": "Premium",
+    "visits_per_week": 4,
+    "benefits": [
+      "Classes",
+      "Towel"
+    ],
+    "last_visit": "Sep 6, 2026",
+    "status": "Active",
+    "email": "mara.osei@example.com",
+    "phone": "(415) 555-0132",
+    "member_since": "July 2024",
+    "logged_visits": 118,
+    "img_name": "images/members/mara-osei.svg"
+  },
+  {
+    "_id": 3,
+    "name": "Renee Castillo",
+    "member_id": "MBR-006002",
+    "plan": "Premium",
+    "visits_per_week": 5,
+    "benefits": [
+      "Classes",
+      "PT"
+    ],
+    "last_visit": "Sep 8, 2026",
+    "status": "Active",
+    "email": "renee.castillo@example.com",
+    "phone": "(415) 555-0187",
+    "member_since": "June 2026",
+    "logged_visits": 31,
+    "img_name": "images/members/renee-castillo.svg"
+  },
+  {
+    "_id": 4,
+    "name": "Leila Haddad",
+    "member_id": "MBR-001774",
+    "plan": "Elite",
+    "visits_per_week": 6,
+    "benefits": [
+      "All Access"
+    ],
+    "last_visit": "Sep 7, 2026",
+    "status": "Active",
+    "email": "leila.haddad@example.com",
+    "phone": "(415) 555-0154",
+    "member_since": "January 2023",
+    "logged_visits": 402,
+    "img_name": "images/members/leila-haddad.svg"
+  },
+  {
+    "_id": 5,
+    "name": "Jamie Torres",
+    "member_id": "MBR-005530",
+    "plan": "Elite",
+    "visits_per_week": 4,
+    "benefits": [
+      "All Access",
+      "Guest Passes"
+    ],
+    "last_visit": "Sep 8, 2026",
+    "status": "Active",
+    "email": "jamie.torres@example.com",
+    "phone": "(415) 555-0119",
+    "member_since": "November 2025",
+    "logged_visits": 79,
+    "img_name": "images/members/jamie-torres.svg"
+  },
+  {
+    "_id": 6,
+    "name": "Daniel Reyes",
+    "member_id": "MBR-002984",
+    "plan": "Standard",
+    "visits_per_week": 2,
+    "benefits": [
+      "Open Gym"
+    ],
+    "last_visit": "Sep 5, 2026",
+    "status": "Active",
+    "email": "daniel.reyes@example.com",
+    "phone": "(415) 555-0163",
+    "member_since": "February 2024",
+    "logged_visits": 96,
+    "img_name": "images/members/daniel-reyes.svg"
+  },
+  {
+    "_id": 7,
+    "name": "James Okafor",
+    "member_id": "MBR-005560",
+    "plan": "Standard",
+    "visits_per_week": 3,
+    "benefits": [
+      "Open Gym",
+      "Towel"
+    ],
+    "last_visit": "Sep 4, 2026",
+    "status": "Active",
+    "email": "james.okafor@example.com",
+    "phone": "(415) 555-0145",
+    "member_since": "December 2025",
+    "logged_visits": 48,
+    "img_name": "images/members/james-okafor.svg"
+  },
+  {
+    "_id": 8,
+    "name": "Sofia Lee",
+    "member_id": "MBR-004199",
+    "plan": "Standard",
+    "visits_per_week": 0,
+    "benefits": [
+      "Open Gym"
+    ],
+    "last_visit": "Aug 12, 2026",
+    "status": "Inactive",
+    "email": "sofia.lee@example.com",
+    "phone": "(415) 555-0176",
+    "member_since": "May 2025",
+    "logged_visits": 23,
+    "img_name": "images/members/sofia-lee.svg"
+  }
+]
